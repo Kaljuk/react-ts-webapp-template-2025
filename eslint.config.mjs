@@ -14,6 +14,8 @@ export default tseslint.config(
       "**/.vscode",
       "**/.yarn",
       "tsconfig.*.json",
+      ".yarn/**",
+      "dist",
       "*.mjs",
       "**/node_modules",
       "**/build",
@@ -33,7 +35,6 @@ export default tseslint.config(
   //prettierConfig,
   prettierPlugin,
   {
-
   languageOptions: {
     parser: tseslint.parser,
     ecmaVersion: 2022,
