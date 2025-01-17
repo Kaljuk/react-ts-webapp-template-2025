@@ -9,6 +9,7 @@ import { swrFetcher } from './api'
 import Screens from './screens'
 import './styles/index.css'
 
+// eslint-disable-next-line no-console
 console.info(`APP: ${name} - ${version}`)
 
 createRoot(document.getElementById('root')!).render(

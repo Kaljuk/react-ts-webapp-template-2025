@@ -2,7 +2,10 @@ import axios from 'axios'
 
 const baseURL = import.meta.env.VITE_APP_API
 
-if (import.meta.env.NODE_ENV === 'development') console.info('Setting API base URL:', baseURL)
+if (import.meta.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line no-console
+  console.info('Setting API base URL:', baseURL)
+}
 
 const api = axios.create({
   baseURL,
