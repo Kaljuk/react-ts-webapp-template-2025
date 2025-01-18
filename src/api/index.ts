@@ -28,7 +28,7 @@ export const swrFetcher = async (config: SWRFetcherArgs) => {
   if (!config) return null
   if (typeof config === 'string') return api.get(config).then((res) => res?.data)
 
-  if (config.isDisabled || !config?.key) return null
+  if (config?.isDisabled || !config?.key) return null
   return api.get(config.key).then((res) => res?.data)
 }
 
