@@ -1,4 +1,4 @@
-import { nextui } from '@nextui-org/react'
+import { heroui } from "@heroui/react"
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -7,7 +7,7 @@ export default {
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
     // NextUI
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -21,7 +21,7 @@ export default {
     },
   },
   plugins: [
-    nextui({
+    heroui({
       themes: {
         light: {
           colors: {
